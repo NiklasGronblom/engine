@@ -1,0 +1,369 @@
+fi:
+  locomotive:
+    locales:
+      en: Englanti
+      de: Saksa
+      fr: Ranska
+      pl: Puola
+      pt: Portugali
+      pt-BR: "Brasilian portugali"
+      it: Italia
+      nl: Hollanti
+      nb: Norja
+      es: Espanja
+      ru: Venäjä
+      et: Viro
+      lt: Liettua
+      ja: Japani
+      zh-CN: Kiina
+      cs: Tsekki
+      bg: Bulgaria
+      sk: Slovakki
+      sr: Serbia
+      sv: Ruotsi
+      el: Kreikka
+
+    messages:
+      confirm: Oletko varma?
+      unsaved_content_warning: "This page is asking you to confirm that you want to leave - data you have entered may not be saved."
+
+    shared:
+      header:
+        welcome: Tervetuloa %{name}
+        sites: Sivustoni
+        account: Tiliasetukset
+        see: Näytä sivusto
+        help: Ohje
+        logout: Kirjaudu ulos
+      sidebar:
+        dashboard: Hallintapaneeli
+        assets: Hyödykkeet
+        pages: Sivut
+        settings: Yleiset asetukset
+        metafields: Ominaisuudet
+        developers: Kehittäjille
+        content_types:
+          title: Oliot
+        translations: Käännökset
+      list:
+        untranslated: kääntämättä
+        created_at: "Luotu %{distance} sitten"
+        created_by: "Luotu %{distance} sitten, %{who}"
+        updated_at: "Viimeksi muokattu %{distance} siten"
+        updated_by: "Viimeksi muokattu %{distance} siten, %{who}"
+      rte:
+        toolbar:
+          table:
+            merge: Yhdistä
+            insert_row_before: Lisää rivi ennen
+            insert_row_after: Lisää rivi jälkeen
+            insert_col_before: Lisää sarake ennen
+            insert_col_after: Lisää sarake jälkeen
+            delete_row: Poista rivi
+            delete_col: Posta sarake
+
+
+    errors:
+      "500":
+        title: Järjestelmävirhe
+        message: "Pahoittelut, mutta jotain meni pieleen. Ota yhteyttä järjestelmävalvojaan."
+      "404":
+        title: Sivua ei löytynyt
+        message: "Hakemasi sivu ei ole olemassa."
+      no_site:
+        title: Sivustoa ei löytynyt
+        next: "Seuraava &rarr;"
+        message:
+          create_account: "Ole hyvä ja luo tili ensin, ja luo sivusto sen jälkeen."
+          add_domain: "Add the <strong>%{host}</strong> domain to the list of domains of one of your sites."
+          sign_in: "Please sign in first. Then, add the <strong>%{host}</strong> domain to the list of domains of one of your sites."
+
+    notifications:
+      new_content_entry:
+        subject: "[%{domain}][%{type}] new entry"
+        title: "Hi %{name}, just to let you know that a new instance has been created on %{date} for the site <b>%{domain}</b>"
+        type: "Model: %{type}"
+
+    activity:
+      site:
+        created: 'loi sivuston'
+      page:
+        created: 'loi %{page} sivun'
+        updated: 'päivitti %{page} sivua'
+        destroyed: 'poisti %{page} sivun'
+        sorted: 'lajitellut sivut'
+      editable_element:
+        updated_bulk: 'muokkasi seuraavien sivujen sisältöä: %{pages}'
+      content_entry:
+        created: 'added %{entry} to %{content_type}'
+        created_public: 'added %{entry} to %{content_type} from a public form'
+        updated: 'updated %{entry} from %{content_type}'
+        destroyed: 'deleted %{entry} from %{content_type}'
+        sorted: 'sorted %{content_type}'
+      content_asset:
+        created_bulk: 'uploaded %{count} asset(s)'
+        destroyed: 'deleted the %{name} asset'
+      membership:
+        created: 'added %{name} to the site'
+      site_metafields:
+        updated: 'updated %{label}'
+
+    pagination:
+      first: "&laquo;"
+      last: "&raquo;"
+      previous: "&lsaquo;"
+      next: "&rsaquo;"
+      truncate: "&hellip;"
+
+    custom_fields:
+      select_options:
+        edit:
+          title: "%{type} &mdash; editing options"
+          back: "Back to the entry"
+        option:
+          edit: Edit
+          apply: Apply
+          cancel: Cancel
+      types:
+        belongs_to:
+          edit: Muokkaa
+          placeholder: "Valitse %{name}"
+          searching: Etsii...
+          no_matches: Ei hakua vastaavia tuloksia
+          too_short: Syötä ainakin yksi kirjain
+        many_to_many:
+          placeholder: "Valitse %{name}"
+          searching: Etsii...
+          no_matches: Ei hakua vastaavia tuloksia
+          too_short: Syötä ainakin yksi kirjain
+        select:
+          edit: Muokkaa vaihtoehtoja
+        file:
+          delete_file: Poista tedosto
+        has_many:
+          new_label: Lisää
+
+      form:
+        required: Vaadittu kenttä
+        default_label: Kenttä
+        select_options:
+          ask_name: "Type the label of the option"
+
+    dashboard:
+      show:
+        title: 'Hallintapaneeli'
+      url:
+        title: "Sivustosi URL:"
+        visit: 'Käy sivustolla'
+        change_domain: 'Käytä omaa verkkotunnusta'
+      activity:
+        title: Activity
+        unknown_account: Someone
+        load_more: Ladataan lisää
+        loading_activity_feed: Lataa...
+
+    sessions:
+      new:
+        email: "Sähköposti"
+        link: "Unohdin salasanani"
+        password: "Salasana"
+        sign_up: Eikö sinulla ole tiliä?
+        submit: Kirjaudu sisään
+        title: Kirjaudu sisään
+
+    registrations:
+      new:
+        confirm_password: Vahvista salasana
+        description: Luo tili alla ja ala käyttämään palvelua.
+        sign_in: Onko sinulla jo tili?
+        submit: Registeröi
+        title: Registeröi
+
+    passwords:
+      new:
+        description: "Fill in your email below and you'll receive an email with instruction on how to reset your password."
+        link: Takaisin sisäänkirjautumissivulle
+        email: Sähköposti
+        submit: Lähetä
+        title: Unohditko salasanan?
+      edit:
+        description: Syötä uusi salasana
+        link: Takaisin sisäänkirjautumissivulle
+        password: Uusi salasana
+        password_confirmation: Vahvista salasana
+        submit: Päivitä salasana
+        title: Palauta salasana
+
+    pages:
+      index:
+        title: Sivut
+        new: Uusi sivu
+        list_content_entries: "Listaa %{name}"
+        new_content_entry: "Uusi %{name}"
+      new:
+        title: Uusi sivu
+        help: "Please fill in the below form to create your page. Be careful, by default, the page is not published."
+      edit:
+        title: "%{title} &mdash; <small>%{fullpath}</small>"
+      form:
+        no_layout: Use the layout of the parent page
+        redirect_type:
+          permanent: "Pysyvä (301)"
+          temporary: "Väliaikainen (302)"
+
+    editable_elements:
+      index:
+        redirection_error: Editing a non Locomotive page is not allowed.
+        iframe:
+          buttons:
+            edit: edit
+      index_without_preview:
+        title: "%{title} &mdash; <small>%{fullpath}</small>"
+      edit:
+        settings_link: Asetukset
+        no_editable_elements: Muokattavia elementtejä ei löydy
+        parsing_error: "<b>We are sorry but we couldn't parse the template of your page.</b><br/>Please make sure your template first works with Wagon."
+        blocks:
+          all: Kaikki
+          unknown: Ei tietoa
+      form:
+        model:
+          buttons:
+            list: Hallitse
+            edit: Muokkaa
+
+    sites:
+      index:
+        description: Kaikki sivustot joihin sinulla on pääsy listataan alla. Klikkaa yhtä niin sinut ohjataan sivuston hallintapaneeliin.
+        new: Lisää uusi sivusto
+        title: Sivustoni
+      new:
+        description: "Fill in the form below and click submit. Once successfull it will create a new site."
+        go_back: Takaisin
+        submit: Luo sivusto
+        title: Luo uusi sivusto
+
+      site:
+        no_domain: Ei vielä verkkotunnusta
+
+    current_site:
+      edit:
+        title: Muokataan nykyistä sivustoa
+      form:
+        main:
+          new_membership: Lisää tili
+        advanced:
+          destroy: Tuhoa tämä sivusto
+          confirm_destroy: Vahvista kirjoittamalla sivuston nimi kenttään
+
+    current_site_metafields:
+      index:
+        title: Editing properties
+        no_metafields: There are no metafields defined for your site.
+
+    memberships:
+      roles:
+        admin: Ylläpitäjä
+        designer: Suunnittelija
+        author: Kirjoittaja
+      new:
+        title: Uusi jäsenyys
+        help: Syötä lisättävä sähköpostiosoite. Jos sitä ei vielä löydy tästä järjestelmästä, sinut ohjataan tilinluonti lomakkeeseen.
+        back: Takaisin sivustosi asetuksiin
+      edit:
+        title: "Edit membership for <b>%{name}</b>"
+        back: "Back to your site settings"
+
+    accounts:
+      new:
+        title: Uusi tili
+        help: Täytä alla oleva lomake lisätäksesi uuden tilin.
+
+    my_account:
+      edit:
+        title: Muokataan tiliäni
+      form:
+        api:
+          api_key: "Used by Wagon to deploy your site (check your config/deploy.yml file of your Wagon site)."
+
+    translations:
+      untranslated: "Kääntämättömät kielet: %{list}"
+      index:
+        title: Käännökset
+        no_items: Käännöksiä ei löytynyt.
+        search_placeholder: Syötä avain tai käännös
+        help: "Translate all the entries with a orange (partially localized) or red (not localized) dots."
+        filter_by:
+          all: Kaikki
+          done: Käännetty
+          partially: Osittain käännetty
+          none: Ei käännetty
+      edit:
+        title: "Käännökset &mdash; muokataan %{key}"
+      form:
+        not_translated: "Ei käännetty"
+
+    content_assets:
+      index:
+        title: "Assets"
+        upload: Upload files
+
+      edit_in_drawer:
+        buttons:
+          resize: "Muuta kokoa"
+          crop: "Leikkaa"
+          apply: "Apply"
+
+      dropzone:
+        instructions: "<strong>Drop files from your computer here.</strong><br/>You can also"
+        browse: "browse for a file"
+
+      list:
+        no_items: "Ei mediaa tällä hetkellä."
+        buttons:
+          select: "Valitse"
+          edit: "Muokkaa"
+
+      nav:
+        types:
+          all: Kaikki
+          pdf: PDF
+          image: kuvat
+          media: rich media
+          others: muut
+
+      search_form:
+        placeholder: Etsi tiedostonimellä
+
+    public_submission_accounts:
+      edit:
+        title: "%{name} &mdash; ilmoitusasetukset"
+
+    developers_documentation:
+      show:
+        title: Kehittäjille
+
+    content_entries:
+      index:
+        title: '%{type}'
+        download: download entries
+        new: new entry
+        edit_notification_settings: Edit notification settings
+        search_placeholder: "Enter your search keywords here"
+        group_by:
+          all: All
+      list:
+        no_items: "There are no entries for now. Just click <a href=\"%{url}\">here</a> to create the first one."
+      new:
+        title: '%{type} &mdash; new entry'
+      edit:
+        title: '%{type} &mdash; editing entry'
+      shared:
+        back: '&larr; Takaisin listaan'
+
+    developers_documentation:
+      show:
+        title: Kehittäjille
+        wagon: Wagon
+        api: API
+
