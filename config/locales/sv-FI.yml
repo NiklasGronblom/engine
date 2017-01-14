@@ -1,4 +1,4 @@
-sv:
+sv-FI:
   locomotive:
     locales:
       en: Engelska
@@ -22,7 +22,7 @@ sv:
       sk: Slovakiska
       sr: Serbiska
       sv: Svenska
-      sv: Svenska (Finland)
+      sv-FI: Svenska (Finland)
       el: Grekiska
     messages:
       confirm: Är du säker?
