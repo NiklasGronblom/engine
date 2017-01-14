@@ -3,6 +3,7 @@ fi:
     locales:
       en: Englanti
       de: Saksa
+      fi: Suomi
       fr: Ranska
       pl: Puola
       pt: Portugali
@@ -21,6 +22,7 @@ fi:
       sk: Slovakki
       sr: Serbia
       sv: Ruotsi
+      sv-FI: Ruotsi (Suomi)
       el: Kreikka
 
     messages:
