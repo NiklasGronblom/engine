@@ -1,65 +1,69 @@
 fi:
   errors:
     messages:
-      not_found: "not found"
-      already_confirmed: "was already confirmed"
-      not_locked: "was not locked"
+      not_found: ei löytynyt
+      already_confirmed: on jo vahvistettu, yritä kirjautua sisään uudelleen
+      not_locked: ei ollut lukittu
 
   devise:
     failure:
       locomotive_account:
-        unauthenticated: 'You need to sign in before continuing.'
-        unconfirmed: 'You have to confirm your account before continuing.'
-        locked: 'Your account is locked.'
-        invalid: 'Invalid email or password.'
-        not_found_in_database: 'Invalid email or password.'
-        no_membership: 'Your account is not a member of this site, please contact the site administrator to gain access.'
-        invalid_token: 'Invalid authentication token.'
-        timeout: 'Your session expired, please sign in again to continue.'
-        inactive: 'Your account was not activated yet.'
+        unauthenticated: Sinun pitää kirjautua sisään tai rekisteröityä ennen kuin voit jatkaa.
+        unconfirmed: Sinun täytyy vahvistaa tunnuksesi ennen kuin voit jatkaa.
+        locked: Tunnuksesi on lukittu.
+        invalid: Epäkelpo sähköpostiosoite tai salasana.
+        not_found_in_database: Epäkelpo sähköpostiosoite tai salasana.
+        # no_membership: 'Your account is not a member of this site, please contact the site administrator to gain access.'
+        no_membership:
+        # invalid_token: 'Invalid authentication token.'
+        invalid_token:
+        timeout: Istuntosi on vanhentunut, ole hyvä ja kirjaudu sisään jatkaaksesi.
+        # inactive: 'Your account was not activated yet.'
+        inactive:
     sessions:
       locomotive_account:
-        signed_in: 'Signed in successfully.'
-        signed_out: 'Signed out successfully.'
+        signed_in: Sisäänkirjautuminen onnistui.
+        signed_out: Uloskirjautuminen onnistui.
     passwords:
       locomotive_account:
-        send_instructions: 'You will receive an email with instructions about how to reset your password in a few minutes.'
-        updated: 'Your password was changed successfully. You are now signed in.'
-        invalid: 'You need to ask again for a new password.'
+        send_instructions: Saat hetken kuluttua sähköpostiisi ohjeet salasanan vaihtoon.
+        updated: Salasanasi on nyt vaihdettu. Olet kirjautuneena sisälle.
+        # invalid: 'You need to ask again for a new password.'
+        invalid:
     confirmations:
       locomotive_account:
-        send_instructions: 'You will receive an email with instructions about how to confirm your account in a few minutes.'
-        confirmed: 'Your account was successfully confirmed. You are now signed in.'
+        send_instructions: Saat hetken kuluttua sähköpostiisi ohjeet tunnuksen vahvistamiseen.
+        confirmed: Tunnuksesi on nyt vahvistettu.
     registrations:
       locomotive_account:
-        signed_up: 'You have signed up successfully.'
-        updated: 'You updated your account successfully.'
-        destroyed: 'Bye! Your account was successfully cancelled. We hope to see you again soon.'
+        signed_up: Tervetuloa! Rekisteröintisi onnistui.
+        updated: Tunnuksesi on päivitetty.
+        destroyed: Näkemiin! Tunnuksesi on nyt poistettu. Toivottavasti näemme sinut vielä uudelleen.
     unlocks:
       locomotive_account:
-        send_instructions: 'You will receive an email with instructions about how to unlock your account in a few minutes.'
-        unlocked: 'Your account was successfully unlocked. You are now signed in.'
+        send_instructions: Saat hetken kuluttua sähköpostiisi ohjeet tunnuksesi lukituksen poistoon.
+        unlocked: Tunnuksesi on nyt avattu. Olet kirjautuneena sisälle.
     mailer:
       locomotive_account:
-        confirmation_instructions: 'Confirmation instructions'
-        reset_password_instructions: 'Reset password instructions'
-        unlock_instructions: 'Unlock Instructions'
+        confirmation_instructions: Vahvistusohjeet
+        reset_password_instructions: Ohjeet salasanan vaihtoon
+        unlock_instructions: Ohjeet tunnuksen lukituksen poistoon
 
 
   locomotive:
     devise_mailer:
       common:
-        hello: Hello
+        hello: Terve
 
       confirmation_instructions:
-        you_can_confirm_your_account_through_the_link_below: "You can confirm your account through the link below:"
-        confirm_my_account: "Confirm my account"
+        you_can_confirm_your_account_through_the_link_below: 'Vahvista sähköpostisi painamalla alla olevaa linkkiä:'
+        confirm_my_account: Vahvista tilini
       reset_password_instructions:
-        reset_password_instruction: "Someone has requested a link to change your password, and you can do this through the link below:"
-        change_my_password: "Change my password"
-        wrong_request_instruction: "If you didn't request this, please ignore this email."
-        unchange_password_message: "Your password won't change until you access the link above and create a new one."
+        reset_password_instruction: "Joku on pyytänyt tilisi salasanan vaihtoa. Tämä voidaan suorittaa painamalla linkkiä alla."
+        change_my_password: Vaihda salasanani
+        wrong_request_instruction: Jos et pyytänyt tätä, älä huomioi tätä sähköpostia.
+        unchange_password_message: Salasanaasi ei vaihdeta ennen kuin painat yllä olevaa linkkiä ja syötät uuden salasanan.
       unlock_instructions:
-        locked_account_message: "Your account has been locked due to an excessive amount of unsuccessful sign in attempts."
-        unlock_account_instruction: "Click the link below to unlock your account:"
-        unlock_my_account: "Unlock my account"
+        locked_account_message: Tilisi on lukittu johtuen liian useasta epäonnistuneesta kirjautumisyrityksestä.
+        unlock_account_instruction: "Paina alla olevaa linkkiä poistaaksesi lukituksen:"
+        unlock_my_account: Poista tilini lukitus
