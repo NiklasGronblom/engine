@@ -15,7 +15,7 @@ fi:
           advanced: Lisäasetukset
           url_redirections: URL uudelleenohjaus
         page:
-          content: Sisältä
+          content: Sisältö
           settings: Asetukset
           seo: SEO
         content_entry:
