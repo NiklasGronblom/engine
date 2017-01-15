@@ -13,13 +13,10 @@ fi:
         locked: Tunnuksesi on lukittu.
         invalid: Epäkelpo sähköpostiosoite tai salasana.
         not_found_in_database: Epäkelpo sähköpostiosoite tai salasana.
-        # no_membership: 'Your account is not a member of this site, please contact the site administrator to gain access.'
-        no_membership:
-        # invalid_token: 'Invalid authentication token.'
-        invalid_token:
+        no_membership: Tilisi ei ole tämän järjestelmän jäsen. Pyydä pääsyä järjestelmävalvojalta.
+        invalid_token: Virheellinen todennustunnus
         timeout: Istuntosi on vanhentunut, ole hyvä ja kirjaudu sisään jatkaaksesi.
-        # inactive: 'Your account was not activated yet.'
-        inactive:
+        inactive: Tiliäsi ei ole vielä aktivoitu.
     sessions:
       locomotive_account:
         signed_in: Sisäänkirjautuminen onnistui.
@@ -28,8 +25,7 @@ fi:
       locomotive_account:
         send_instructions: Saat hetken kuluttua sähköpostiisi ohjeet salasanan vaihtoon.
         updated: Salasanasi on nyt vaihdettu. Olet kirjautuneena sisälle.
-        # invalid: 'You need to ask again for a new password.'
-        invalid:
+        invalid: Sinun täytyy pyytää uutta salasanaa toistamiseen.
     confirmations:
       locomotive_account:
         send_instructions: Saat hetken kuluttua sähköpostiisi ohjeet tunnuksen vahvistamiseen.
