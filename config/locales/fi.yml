@@ -7,7 +7,7 @@ fi:
       fr: Ranska
       pl: Puola
       pt: Portugali
-      pt-BR: "Brasilian portugali"
+      pt-BR: Brasilian portugali
       it: Italia
       nl: Hollanti
       nb: Norja
@@ -27,7 +27,7 @@ fi:
 
     messages:
       confirm: Oletko varma?
-      unsaved_content_warning: "This page is asking you to confirm that you want to leave - data you have entered may not be saved."
+      unsaved_content_warning: Sivu pyytää vahvistamaan että haluat siirtyä siltä pois - syötetyt tiedot eivät välttämättä tallennu.
 
     shared:
       header:
