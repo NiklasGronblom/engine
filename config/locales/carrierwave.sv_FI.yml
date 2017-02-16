@@ -1,0 +1,4 @@
+sv_FI:
+  carrierwave:
+    errors:
+      integrity: 'filtypen är inte godkänd.'

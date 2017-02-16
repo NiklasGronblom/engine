@@ -1,0 +1,172 @@
+fi_FI:
+  locomotive:
+    locales:
+      en: Englanti
+      de: Saksa
+      fr: Ranska
+      pl: Puola
+      pt: Portugali
+      pt-BR: "Brasilian portugali"
+      it: Italia
+      nl: Hollanti
+      nb: Norja
+      es: Espanja
+      fi_FI: Suomi
+      ru: Venäjä
+      et: Viro
+      lt: Liettua
+      ja: Japani
+      zh-CN: Kiina
+      cs: Tšekki
+      bg: Bulgaria
+      sk: Slovakki
+      sr: Serbia
+      sv: Ruotsi
+      el: Kreikka
+    messages:
+      confirm: Oletko varma?
+    shared:
+      header:
+        welcome: Tervetuloa %{name}
+        sites: Sivustoni
+        account: Tiliasetukset
+        see: Näytä sivusto
+        logout: Kirjaudu ulos
+      sidebar:
+        assets: Varannot
+        pages: Sivut
+        settings: Yleisasetukset
+        developers: Kehittäjille
+        content_types:
+          title: Mallit
+        translations: Käännökset
+      rte:
+        toolbar:
+          table:
+            delete_row: Poista rivi
+            delete_col: Poista sarake
+    errors:
+      '500':
+        title: Järjestelmävirhe
+        message: "Olemme pahoillamme - jotain meni pieleen. Ota yhteyttä järjestelmävastaavaan."
+      '404':
+        title: Sivua ei löytynyt
+        message: "Hakemasi sivua ei ole olemassa."
+      no_site:
+        title: Sivusta ei löytynyt.
+        next: "Seuraava &rarr;"
+    custom_fields:
+      select_options:
+        option:
+          edit: Muokkaa
+          cancel: Peruuta
+      types:
+        belongs_to:
+          edit: Muokkaa
+          placeholder: "Valitse %{name}"
+          searching: Etistään...
+          no_matches: Mitään ei löytynyt
+          too_short: Syötä vähintään 1 merkki
+        many_to_many:
+          placeholder: "Valitse yksi %{name}"
+          searching: Etsitään...
+          no_matches: Mitään ei löytynyt
+          too_short: Syötä vähintään 1 merkki
+        file:
+          delete_file: Poista tiedosto
+    dashboard:
+      url:
+        title: "Sivustosi URL:"
+        visit: 'Käy'
+        change_domain: 'Käytä omaa domainia'
+      activity:
+        unknown_account: Joku
+        load_more: Ladataan lisää
+        loading_activity_feed: Ladataan...
+    sessions:
+      new:
+        email: "Sähköposti"
+        link: "Unohdin salasanani"
+        password: "Salasana"
+        sign_up: Sinulla ei ole tiliä?
+        submit: Kirjaudu sisään
+        title: Kirjaudu sisään
+    registrations:
+      new:
+        confirm_password: Vahvista salasana
+        sign_in: Onko sinulla jo tili?
+        submit: Rekisteröidy
+        title: Rekisteröidy
+    passwords:
+      new:
+        link: "Takaisin kirjautumissivulle"
+        email: "Sähköpostiosoitteesi"
+        submit: "Lähetä"
+        title: "Unohditko salasanasi"
+      edit:
+        password: "Uusi salasanasi"
+        password_confirmation: "Vahvista salasanasi"
+        submit: "Päivitä salsanani"
+    pages:
+      index:
+        title: 'Sivut'
+        new: 'Uusi sivu'
+      new:
+        title: Uusi sivu
+    editable_elements:
+      index:
+        iframe:
+          buttons:
+            edit: muokkaa
+      edit:
+        settings_link: 'Asetukset'
+    sites:
+      index:
+        title: Sivustoni
+      new:
+        go_back: Takaisin
+        submit: Luo sivusto
+        title: Luo uusi sivusto
+      site:
+        no_domain: Ei vielä domainia
+    current_site:
+      form:
+        main:
+          new_membership: "Lisää tili"
+        advanced:
+          destroy: "Tuhoa tämä sivusto"
+    accounts:
+      new:
+        title: Uusi tili
+    translations:
+      index:
+        title: Käännökset
+        no_items: "Käänöksiä ei löytynyt"
+        filter_by:
+          all: Kaikki
+          done: Käännetyt
+          partially: Osittain käännetty
+          none: Ei käännetty
+      form:
+        not_translated: "Ei käännetty"
+    content_assets:
+      list:
+        buttons:
+          select: "Valitse"
+          edit: "Muokkaa"
+      nav:
+        types:
+          all: Kaikki
+          pdf: PDF:ät
+          image: Kuvat
+          others: muut
+      search_form:
+        placeholder: Etsi tiedostonimellä
+    content_entries:
+      index:
+        group_by:
+          all: Kaikki
+    developers_documentation:
+      show:
+        wagon: Wagon
+        api: API

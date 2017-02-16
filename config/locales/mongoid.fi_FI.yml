@@ -1,0 +1,24 @@
+fi_FI:
+  mongoid:
+    errors:
+      messages:
+        blank_in_locale: "ei voi olla tyhjä"
+      models:
+        locomotive/membership:
+          attributes:
+            account:
+              unique_account: "on jo käytössä"
+            email:
+              unique_account: "on jo käytössä"
+    attributes:
+      locomotive/content_entry:
+        created_at: Luotu
+  attributes:
+    defaults:
+      pages:
+        index:
+          title: "Kotisivu"
+          body: "Kotisivun sisältö"
+        '404':
+          title: "Sivua ei löytynyt"
+          body: "404 sivun sisältö"
