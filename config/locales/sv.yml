@@ -3,6 +3,7 @@ sv:
     locales:
       en: Engelska
       de: Tyska
+      fi-FI: Finska
       fr: Franska
       pl: Polska
       pt: Portugisiska
@@ -21,6 +22,7 @@ sv:
       sk: Slovakiska
       sr: Serbiska
       sv: Svenska
+      sv-FI: Svenska (Finland)
       el: Grekiska
     messages:
       confirm: Är du säker?
