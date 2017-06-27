@@ -11,7 +11,6 @@ fi_FI:
       nl: Hollanti
       nb: Norja
       es: Espanja
-      fi_FI: Suomi
       ru: Venäjä
       et: Viro
       lt: Liettua
@@ -31,18 +30,31 @@ fi_FI:
         sites: Sivustoni
         account: Tiliasetukset
         see: Näytä sivusto
+        help: Apua
         logout: Kirjaudu ulos
       sidebar:
+        dashboard: Kojelauta
         assets: Varannot
         pages: Sivut
         settings: Yleisasetukset
+        metafields: Ominaisuudet
         developers: Kehittäjille
         content_types:
           title: Mallit
         translations: Käännökset
+      list:
+        untranslated: ei käännetty
+        created_by: "Luotu %{distance} sitten %{who}:n toimesta"
+        updated_at: "Viimeksi muokattu %{distance} sitten"
+        updated_by: "Viimeksi muokattu %{distance} sitten %{who}:n toimesta"
       rte:
         toolbar:
           table:
+            merge: Yhdistä
+            insert_row_before: Lisää rivi ennen
+            insert_row_after: Lisää rivi jälkeen
+            insert_col_before: Lisää sarake ennen
+            insert_col_after: Lisää sarake jälkeen
             delete_row: Poista rivi
             delete_col: Poista sarake
     errors:
@@ -51,10 +63,27 @@ fi_FI:
         message: "Olemme pahoillamme - jotain meni pieleen. Ota yhteyttä järjestelmävastaavaan."
       '404':
         title: Sivua ei löytynyt
-        message: "Hakemasi sivua ei ole olemassa."
+        message: "Hakemasi sivu ei ole olemassa."
       no_site:
         title: Sivusta ei löytynyt.
         next: "Seuraava &rarr;"
+        message:
+          create_account: "Ole hyvä ja luo ensin tili ja sitten sivusto."
+    activity:
+      site:
+        created: 'loi sivuston'
+      page:
+        created: 'loi %{page} sivun'
+        destroyed: 'poisti %{page} sivun'
+        sorted: 'järjestetyt sivut'
+      editable_element:
+        updated_bulk: 'muokkasi %{pages} sivun sisältöä'
+    pagination:
+      first: "&laquo;"
+      last: "&raquo;"
+      previous: "&lsaquo;"
+      next: "&rsaquo;"
+      truncate: "&hellip;"
     custom_fields:
       select_options:
         option:
@@ -74,7 +103,12 @@ fi_FI:
           too_short: Syötä vähintään 1 merkki
         file:
           delete_file: Poista tiedosto
+      form:
+        required: Vaadittu
+        default_label: Kentän nimi
     dashboard:
+      show:
+        title: 'Kojelauta'
       url:
         title: "Sivustosi URL:"
         visit: 'Käy'
@@ -104,24 +138,48 @@ fi_FI:
         submit: "Lähetä"
         title: "Unohditko salasanasi"
       edit:
+        link: "Takaisin sisäänkirjautumissivulle"
         password: "Uusi salasanasi"
         password_confirmation: "Vahvista salasanasi"
         submit: "Päivitä salsanani"
+        title: "Nollaa salasana"
     pages:
       index:
         title: 'Sivut'
         new: 'Uusi sivu'
+        list_content_entries: "Listaa %{name}"
+        new_content_entry: "Uusi %{name}"
       new:
         title: Uusi sivu
+        help: "Ole hyvä ja täyty alla oleva lomake luodaksesi sivun. Huomioi että oletusarvona on että sivua ei ole julkaistu."
+      edit:
+        title: "%{title} &mdash; <small>%{fullpath}</small>"
+      form:
+        no_layout: Käytä pääsivun asettelua
+        redirect_type:
+          permanent: "Pysyvä (301)"
+          temporary: "Väliaikainen (302)"
     editable_elements:
       index:
         iframe:
           buttons:
             edit: muokkaa
+      index_without_preview:
+        title: "%{title} &mdash; <small>%{fullpath}</small>"
       edit:
         settings_link: 'Asetukset'
+        no_editable_elements: 'Muokattavia elementtejä ei löytynyt.'
+        blocks:
+          all: Kaikki
+          unknown: Tuntematon
+      form:
+        model:
+          buttons:
+            list: Hallinnoi
+            edit: Muokkaa
     sites:
       index:
+        new: Lisää uusi sivusto
         title: Sivustoni
       new:
         go_back: Takaisin
@@ -130,14 +188,27 @@ fi_FI:
       site:
         no_domain: Ei vielä domainia
     current_site:
+      edit:
+        title: Muokataan nykyistä sivustoa
       form:
         main:
           new_membership: "Lisää tili"
         advanced:
           destroy: "Tuhoa tämä sivusto"
+    memberships:
+      roles:
+        admin: Pääkäyttäjä
+        author: Tekijä
+      new:
+        back: "Takaisin sivustosi asetuksiin"
+      edit:
+        back: "Takaisin sivustosi asetuksiin"
     accounts:
       new:
         title: Uusi tili
+    my_account:
+      edit:
+        title: Muokataan tiliäsi
     translations:
       index:
         title: Käännökset
@@ -150,6 +221,15 @@ fi_FI:
       form:
         not_translated: "Ei käännetty"
     content_assets:
+      index:
+        upload: Lataa tiedostoja
+      edit_in_drawer:
+        buttons:
+          resize: "Muuta kokoa"
+          crop: "Rajaa"
+          apply: "Käytä"
+      dropzone:
+        browse: "Selaa tiedostoja"
       list:
         buttons:
           select: "Valitse"
@@ -164,6 +244,10 @@ fi_FI:
         placeholder: Etsi tiedostonimellä
     content_entries:
       index:
+        download: lataa merkinnät
+        new: uusi merkintä
+        edit_notification_settings: Muokkaa ilmoistusasetuksia
+        search_placeholder: "Syötä haun avainsanat tähän"
         group_by:
           all: Kaikki
     developers_documentation:

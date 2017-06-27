@@ -6,7 +6,7 @@ fi_FI:
           notice: "Sivun luonti onnistui."
           alert: "Sivua ei voitu luoda."
         update:
-          notice: "Sivua päivitys onnistui."
+          notice: "Sivun päivitys onnistui."
           alert: "Sivua ei päivitetty."
         sort:
           notice: "Sivut lajiteltiin onnistuneesti."

@@ -10,13 +10,10 @@ fi_FI:
         cancel: Peruuta
         select_local_file: Lataa paikallinen tiedosto
         select_content_asset: Valitse hyödykkeistä
-
       array:
         new: Uusi
         add: Lisää
         edit: Muokkaa
-
       toggle:
         on_text: "Kyllä"
         off_text: "Ei"
-

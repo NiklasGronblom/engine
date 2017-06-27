@@ -13,6 +13,9 @@ fi_FI:
     attributes:
       locomotive/content_entry:
         created_at: Luotu
+  errors:
+    messages:
+      invalid_domain: "%{value} on epäkelpo"
   attributes:
     defaults:
       pages:

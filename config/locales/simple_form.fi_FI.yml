@@ -1,7 +1,6 @@
 fi_FI:
   simple_form:
-    blank_required_fields: Et ole täyttänyt kaikkia vaadittavia kenttiä.
-
+    blank_required_fields: "Et ole täyttänyt kaikkia vaadittavia kenttiä."
     titles:
       locomotive:
         account:
@@ -22,16 +21,13 @@ fi_FI:
           content: Sisältö
           advanced: Lisäasetukset
           seo: SEO
-
     labels:
       locomotive:
         content_entry:
           _slug: Permalink
           _visible: Näkyvyys
         content_type:
-          public_submission_accounts: Tilit joille lähetetään ilmoitus
-          # "custom_fields/field":
-          #   select_options: "Options"
+          public_submission_accounts: "Tilit joille lähetetään ilmoitus"
         account:
           api_key: API key
           no_api_key: None
@@ -48,8 +44,8 @@ fi_FI:
           locales: Kielet
           timezone_name: Aikavyöhyke
           cache_enabled: Välimuisti
-          private_access: Ota käyttöön salasanasuojaus
-          password: Sivustonlaajuinen salasana
+          private_access: "Ota käyttöön salasanasuojaus"
+          password: "Sivustonlaajuinen salasana"
           new:
             locales: Ensimmäinen kieli
         membership:
@@ -62,33 +58,31 @@ fi_FI:
         rte_input_image_form:
           src: Lähde
           title: Otsikko
-          alt: Alt
           alignment: Tasaus
         image_resize_form:
           width: Leveys
           height: Korkeus
         rte_input_table_form:
-          cols: Sarakkeet
-          rows: Rivit
-          head: Otsikkorivi?
-          class_name: CSS luokka
-
+          cols: "Sarakkeet"
+          rows: "Rivit"
+          head: "Otsikkorivi?"
+          class_name: "CSS luokka"
     hints:
       locomotive:
         account:
           password: Vähintään 6 merkkiä
         page:
-          handle: Yksilöllinen tunniste jolla voi hakea ulkoisesta controllerista
-          published: Vain todennetut tilit voivat nähdä julkaisemattomia sivuja.
-          templatized: Käytä sivua mallina tekmällesi oliolle
-          cache_enabled: Käytä välimuistia niin kauan kuin sisält ei muutu.
-          listed: Sivun näkyvyys valikossa.
-          target_klass_name: Sisältötyyppi jolle tämä sivu toimii mallina.
+          handle: "Yksilöllinen tunniste jolla voi hakea ulkoisesta controllerista"
+          published: "Vain todennetut tilit voivat nähdä julkaisemattomia sivuja."
+          templatized: "Käytä sivua mallina tekmällesi oliolle"
+          cache_enabled: "Käytä välimuistia niin kauan kuin sisält ei muutu."
+          listed: "Sivun näkyvyys valikossa."
+          target_klass_name: "Sisältötyyppi jolle tämä sivu toimii mallina."
           seo_title: "Define a page title which should be used as the value for the title tag in the head section. Leave it empty if you want to use the default value from the site settings."
           meta_keywords: "Overrides the site's meta keywords used within the head tag of the page. They are separated by a comma."
           meta_description: "Overrides the site's meta description used within the head tag of the page."
           is_layout: "If true, this page can used as a layout for other pages."
-          allow_layout: "Let authors change or not the layout of that page."
+          allow_layout: "Salli tai älä salli tekijöiden muokata sivun sommittelua."
         site:
           locales: "Drag&drop a flag to the first position to make it the default one."
           seo_title: "Define a global value here which should be used as the value for the title tag in the head section."
@@ -99,7 +93,6 @@ fi_FI:
           memberships: "You can invite other accounts to edit/manage the site."
           cache_enabled: "When enabled, your pages will be cached as long as the content doesn't change. Disabling cache per page is allowed."
           redirect_to_first_domain: "When enabled, requests made to any domains listed above will be redirected to the first domain."
-          redirect_to_https: "When enabled, non secure requests will be redirected to https. This requires the installation of a SSL certificate on the web server."
           url_redirections: "Redirect (301) legacy urls to pages you created in the back-office. The origin and the destination URLs are separated by a <u>space</u>."
           private_access: You can hide your site behind a password.
           password: The password public visitors will have to enter to see the content of your site.
@@ -118,7 +111,6 @@ fi_FI:
         image_resize_form:
           width: "pixeleissä"
           height: "pixeleissä"
-
     placeholders:
       locomotive:
         site:
@@ -126,20 +118,18 @@ fi_FI:
           url_redirections: "Esim: vanha-url uusi-url-locomotive"
         content_type_entry_field:
           select_options: "Type the label of your new option here"
-
     options:
       locomotive:
         rte_input_link_form:
           target:
-            not_set: Ei asetettu
-            self: Avaa linkki samassa ikkunassa
-            blank: Avaa linkki uudessa ikkunassa
+            not_set: "Ei asetettu"
+            self: "Avaa linkki samassa ikkunassa"
+            blank: "Avaa linkki uudessa ikkunassa"
         rte_input_image_form:
           alignment:
             default: Oletus
             left: Vasen
             right: Oikea
-
     buttons:
       defaults:
         locomotive:
@@ -151,7 +141,6 @@ fi_FI:
           close: Sulje
           loading_text: "Tallennetaan..."
           or: tai
-
       locomotive:
         account:
           new_api_key: Regenerate
@@ -162,4 +151,3 @@ fi_FI:
           delete: Delete this site
         page:
           delete: Delete
-
