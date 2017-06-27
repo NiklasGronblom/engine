@@ -10,7 +10,7 @@ Locomotive relies on a **very original workflow**:
 - Sites are deployed to the platform (engine) thanks to our internal API.
 - A back-office for the end-users is automatically generated based on the custom models and editable regions described by the developers.
 
-![Locomotive](https://dl.dropboxusercontent.com/u/20823269/locomotive-engine.png)
+![Locomotive](http://i.imgur.com/iRG1gWA.jpg)
 
 Visit the Locomotive official website [here](http://
 locomotive.works) for more information.
@@ -74,4 +74,4 @@ For new features (especially large ones) it is best to create a topic on the [Go
 
 Feel free to contact me at did at locomotivecms dot com.
 
-Copyright (c) 2016 NoCoffee, released under the MIT license
+Copyright (c) 2017 NoCoffee, released under the MIT license

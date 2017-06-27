@@ -59,8 +59,7 @@ module Locomotive
         end
 
         def locales=(array)
-          array.reject!(&:blank?)
-          array = [] if array.blank?; super(array)
+          super((array || []).reject(&:blank?).map(&:to_s))
         end
 
         def default_locale
@@ -105,11 +104,11 @@ module Locomotive
         protected
 
         def add_default_locale
-          self.locales = [Locomotive.config.site_locales.first] if self.locales.blank?
+          self.locales = [Locomotive.config.site_locales.first.to_s] if self.locales.blank?
         end
 
         def can_not_remove_default_locale
-          if self.persisted? && !self.locales.include?(self.default_locale_was)
+          if self.persisted? && !self.locales.map(&:to_s).include?(self.default_locale_was.to_s)
             self.errors.add :locales, I18n.t(:default_locale_removed, scope: [:errors, :messages, :site])
           end
         end
