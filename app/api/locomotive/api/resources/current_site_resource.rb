@@ -27,7 +27,6 @@ module Locomotive
             present current_site, with: entity_klass
           end
 
-
           desc 'Update current site'
           params do
             requires :site, type: Hash do
@@ -39,11 +38,13 @@ module Locomotive
               optional :robots_txt
               optional :locales, type: Array
               optional :domains, type: Array
+              optional :url_redirections, type: Array
               optional :timezone
               optional :picture
               optional :metafields_schema
               optional :metafields
               optional :metafields_ui
+              optional :asset_host
             end
           end
           put do
