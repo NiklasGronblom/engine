@@ -1,0 +1,31 @@
+fi_FI:
+  mongoid:
+    errors:
+      messages:
+        blank_in_locale: "ei voi olla tyhjä"
+      models:
+        locomotive/membership:
+          attributes:
+            account:
+              unique_account: "on jo käytössä"
+            email:
+              unique_account: "on jo käytössä"
+    attributes:
+      locomotive/content_entry:
+        created_at: Luotu
+  errors:
+    messages:
+      domain_taken: "%{value} on jo käytössä"
+      invalid_domain: "%{value} on epäkelpo"
+      needs_admin_account: "Vaaditaan vähintään yksi pääkäyttäjätili"
+      site:
+        wrong_timezone_name: "Väärä aikavyöhykkeen nimi"
+  attributes:
+    defaults:
+      pages:
+        index:
+          title: "Kotisivu"
+          body: "Kotisivun sisältö"
+        '404':
+          title: "Sivua ei löytynyt"
+          body: "404 sivun sisältö"

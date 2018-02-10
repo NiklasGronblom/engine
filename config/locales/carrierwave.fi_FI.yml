@@ -1,0 +1,4 @@
+fi_FI:
+  carrierwave:
+    errors:
+      integrity: 'ei ole sallittu tiedostotyyppi'

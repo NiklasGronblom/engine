@@ -1,0 +1,55 @@
+fi_FI:
+  flash:
+    locomotive:
+      pages:
+        create:
+          notice: "Sivun luonti onnistui."
+          alert: "Sivua ei voitu luoda."
+        update:
+          notice: "Sivun päivitys onnistui."
+          alert: "Sivua ei päivitetty."
+        sort:
+          notice: "Sivut lajiteltiin onnistuneesti."
+        destroy:
+          notice: "Sivun poisto onnistui."
+      content_types:
+        update:
+          notice: "Mallin päivitys onnistui."
+          alert: "Mallia ei päivitetty."
+      current_site:
+        update:
+          notice: "Sivustoni päivitys onnistui."
+          alert: "Sivustoani ei päivitetty."
+      accounts:
+        create:
+          notice: "Tili luotiin onnistuneesti."
+          alert: "Tiliä ei luotu."
+      my_account:
+        update:
+          notice: "Tilini päivitys onnistui."
+          alert: "Tiliäni ei päivitetty."
+      sites:
+        create:
+          notice: "Sivusto luotiin onnistuneesti."
+          alert: "Sivustoa ei luotu."
+        destroy:
+          notice: "Sivusto poistettu."
+      memberships:
+        create:
+          notice: "Jäsenyys luotu."
+          alert: "Jäsenyyttä ei luotu."
+          already_created: "Tili jo kytketty nykyiseen sivustoon."
+      translations:
+        create:
+          notice: "Käännöksen luonti onnistui."
+          alert: "Käännöstä ei luotu."
+        update:
+          notice: "Käännöstä päivitettiin onnistuneesti."
+          alert: "Käännöstä ei päivitetty."
+        destroy:
+          notice: "Käännös poistettu."
+      custom_fields:
+        select_options:
+          update:
+            notice: "Kenttä päivitettiin onnistuneesti."
+            alert: "Kenttää ei päivitetty."

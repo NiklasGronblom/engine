@@ -1,0 +1,262 @@
+fi_FI:
+  locomotive:
+    locales:
+      en: Englanti
+      de: Saksa
+      fr: Ranska
+      pl: Puola
+      pt: Portugali
+      pt-BR: "Brasilian portugali"
+      it: Italia
+      nl: Hollanti
+      nb: Norja
+      es: Espanja
+      ru: Venäjä
+      et: Viro
+      lt: Liettua
+      ja: Japani
+      zh-CN: Kiina
+      cs: Tšekki
+      bg: Bulgaria
+      sk: Slovakki
+      sr: Serbia
+      sv: Ruotsi
+      el: Kreikka
+    messages:
+      confirm: Oletko varma?
+    shared:
+      header:
+        welcome: Tervetuloa %{name}
+        sites: Sivustoni
+        account: Tiliasetukset
+        see: Näytä sivusto
+        help: Apua
+        logout: Kirjaudu ulos
+      sidebar:
+        dashboard: Kojelauta
+        assets: Varannot
+        pages: Sivut
+        settings: Yleisasetukset
+        metafields: Ominaisuudet
+        developers: Kehittäjille
+        content_types:
+          title: Mallit
+        translations: Käännökset
+      list:
+        untranslated: ei käännetty
+        created_by: "Luotu %{distance} sitten %{who}:n toimesta"
+        updated_at: "Viimeksi muokattu %{distance} sitten"
+        updated_by: "Viimeksi muokattu %{distance} sitten %{who}:n toimesta"
+      rte:
+        toolbar:
+          table:
+            merge: Yhdistä
+            insert_row_before: Lisää rivi ennen
+            insert_row_after: Lisää rivi jälkeen
+            insert_col_before: Lisää sarake ennen
+            insert_col_after: Lisää sarake jälkeen
+            delete_row: Poista rivi
+            delete_col: Poista sarake
+    errors:
+      '500':
+        title: Järjestelmävirhe
+        message: "Olemme pahoillamme - jotain meni pieleen. Ota yhteyttä järjestelmävastaavaan."
+      '404':
+        title: Sivua ei löytynyt
+        message: "Hakemasi sivu ei ole olemassa."
+      no_site:
+        title: Sivusta ei löytynyt.
+        next: "Seuraava &rarr;"
+        message:
+          create_account: "Ole hyvä ja luo ensin tili ja sitten sivusto."
+    activity:
+      site:
+        created: 'loi sivuston'
+      page:
+        created: 'loi %{page} sivun'
+        destroyed: 'poisti %{page} sivun'
+        sorted: 'järjestetyt sivut'
+      editable_element:
+        updated_bulk: 'muokkasi %{pages} sivun sisältöä'
+    pagination:
+      first: "&laquo;"
+      last: "&raquo;"
+      previous: "&lsaquo;"
+      next: "&rsaquo;"
+      truncate: "&hellip;"
+    custom_fields:
+      select_options:
+        option:
+          edit: Muokkaa
+          apply: Käytä
+          cancel: Peruuta
+      types:
+        belongs_to:
+          edit: Muokkaa
+          placeholder: "Valitse %{name}"
+          searching: Etistään...
+          no_matches: Mitään ei löytynyt
+          too_short: Syötä vähintään 1 merkki
+        many_to_many:
+          placeholder: "Valitse yksi %{name}"
+          searching: Etsitään...
+          no_matches: Mitään ei löytynyt
+          too_short: Syötä vähintään 1 merkki
+        file:
+          delete_file: Poista tiedosto
+      form:
+        required: Vaadittu
+        default_label: Kentän nimi
+    dashboard:
+      show:
+        title: 'Kojelauta'
+      url:
+        title: "Sivustosi URL:"
+        visit: 'Käy'
+        change_domain: 'Käytä omaa domainia'
+      activity:
+        unknown_account: Joku
+        load_more: Ladataan lisää
+        loading_activity_feed: Ladataan...
+    sessions:
+      new:
+        email: "Sähköposti"
+        link: "Unohdin salasanani"
+        password: "Salasana"
+        sign_up: Sinulla ei ole tiliä?
+        submit: Kirjaudu sisään
+        title: Kirjaudu sisään
+    registrations:
+      new:
+        confirm_password: Vahvista salasana
+        sign_in: Onko sinulla jo tili?
+        submit: Rekisteröidy
+        title: Rekisteröidy
+    passwords:
+      new:
+        link: "Takaisin kirjautumissivulle"
+        email: "Sähköpostiosoitteesi"
+        submit: "Lähetä"
+        title: "Unohditko salasanasi"
+      edit:
+        link: "Takaisin sisäänkirjautumissivulle"
+        password: "Uusi salasanasi"
+        password_confirmation: "Vahvista salasanasi"
+        submit: "Päivitä salsanani"
+        title: "Nollaa salasana"
+    pages:
+      index:
+        title: 'Sivut'
+        new: 'Uusi sivu'
+        list_content_entries: "Listaa %{name}"
+        new_content_entry: "Uusi %{name}"
+      new:
+        title: Uusi sivu
+        help: "Ole hyvä ja täyty alla oleva lomake luodaksesi sivun. Huomioi että oletusarvona on että sivua ei ole julkaistu."
+      edit:
+        title: "%{title} &mdash; <small>%{fullpath}</small>"
+      form:
+        no_layout: Käytä pääsivun asettelua
+        redirect_type:
+          permanent: "Pysyvä (301)"
+          temporary: "Väliaikainen (302)"
+    editable_elements:
+      index:
+        iframe:
+          buttons:
+            edit: muokkaa
+      index_without_preview:
+        title: "%{title} &mdash; <small>%{fullpath}</small>"
+      edit:
+        settings_link: 'Asetukset'
+        no_editable_elements: 'Muokattavia elementtejä ei löytynyt.'
+        blocks:
+          all: Kaikki
+          unknown: Tuntematon
+      form:
+        model:
+          buttons:
+            list: Hallinnoi
+            edit: Muokkaa
+    sites:
+      index:
+        new: Lisää uusi sivusto
+        title: Sivustoni
+      new:
+        go_back: Takaisin
+        submit: Luo sivusto
+        title: Luo uusi sivusto
+      site:
+        no_domain: Ei vielä domainia
+    current_site:
+      edit:
+        title: Muokataan nykyistä sivustoa
+      form:
+        main:
+          new_membership: "Lisää tili"
+        advanced:
+          destroy: "Tuhoa tämä sivusto"
+    current_site_metafields:
+      index:
+        title: Ominaisuuksien muokkaus
+    memberships:
+      roles:
+        admin: Pääkäyttäjä
+        author: Tekijä
+      new:
+        back: "Takaisin sivustosi asetuksiin"
+      edit:
+        back: "Takaisin sivustosi asetuksiin"
+    accounts:
+      new:
+        title: Uusi tili
+    my_account:
+      edit:
+        title: Muokataan tiliäsi
+    translations:
+      index:
+        title: Käännökset
+        no_items: "Käänöksiä ei löytynyt"
+        search_placeholder: "Syötä avain tai käännös"
+        filter_by:
+          all: Kaikki
+          done: Käännetyt
+          partially: Osittain käännetty
+          none: Ei käännetty
+      form:
+        not_translated: "Ei käännetty"
+    content_assets:
+      index:
+        upload: Lataa tiedostoja
+      edit_in_drawer:
+        buttons:
+          resize: "Muuta kokoa"
+          crop: "Rajaa"
+          apply: "Käytä"
+      dropzone:
+        browse: "Selaa tiedostoja"
+      list:
+        buttons:
+          select: "Valitse"
+          edit: "Muokkaa"
+      nav:
+        types:
+          all: Kaikki
+          pdf: PDF:ät
+          image: Kuvat
+          others: muut
+      search_form:
+        placeholder: Etsi tiedostonimellä
+    content_entries:
+      index:
+        download: lataa merkinnät
+        new: uusi merkintä
+        edit_notification_settings: Muokkaa ilmoistusasetuksia
+        search_placeholder: "Syötä haun avainsanat tähän"
+        group_by:
+          all: Kaikki
+    developers_documentation:
+      show:
+        title: Kehittäjät
+        wagon: Wagon
+        api: API
